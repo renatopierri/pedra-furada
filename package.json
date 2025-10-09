@@ -1,0 +1,20 @@
+{
+  "name": "pedra-furada",
+  "version": "1.0.0",
+  "description": "Aplicação web SPA desenvolvida em **Next.js**, com foco em **CI/CD**, **TDD** e **boas práticas de versionamento**.",
+  "main": "next.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Renato de Pierri",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatopierri/pedra-furada.git"
+  },
+  "bugs": {
+    "url": "https://github.com/renatopierri/pedra-furada/issues"
+  },
+  "homepage": "https://github.com/renatopierri/pedra-furada#readme"
+}
