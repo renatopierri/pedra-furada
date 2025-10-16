@@ -3,12 +3,7 @@
   "version": "1.0.0",
   "description": "Aplicação web SPA desenvolvida em **Next.js**, com foco em **CI/CD**, **TDD** e **boas práticas de versionamento**.",
   "main": "next.config.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test": "jest --watchAll"
-  },
+  
   "keywords": [],
   "author": "Renato de Pierri",
   "license": "MIT",
@@ -20,6 +15,12 @@
     "url": "https://github.com/renatopierri/pedra-furada/issues"
   },
   "homepage": "https://github.com/renatopierri/pedra-furada#readme",
+"scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watchAll"
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.27.1",
     "@testing-library/jest-dom": "^6.9.1",
