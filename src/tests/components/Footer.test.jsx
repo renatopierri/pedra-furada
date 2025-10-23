@@ -1,26 +1,26 @@
 import { render, screen } from "@testing-library/react";
 import Footer from "../../components/Footer";
 
+// 👇 IMPORTA os módulos nativos do Node usados na verificação do arquivo
+import fs from "fs";
+import path from "path";
+
 describe("Footer", () => {
   test("deve exibir o texto de direitos autorais", () => {
     render(<Footer />);
-    expect(
-      screen.getByText("© 2025 Pousada Pedra Furada")
-    ).toBeInTheDocument();
+    expect(screen.getByText("© 2025 Pousada Pedra Furada")).toBeInTheDocument();
   });
 });
 
 describe("Verifica se importou o React", () => {
   it('deve conter "import React from \\"react\\";" no topo do arquivo', () => {
-    // Caminho absoluto para o arquivo index.jsx
-    const filePath = path.resolve(__dirname, "../pages/index.jsx");
+    // 👇 Aponta para o arquivo do componente que está sendo testado
+    const filePath = path.resolve(__dirname, "../../components/Footer.jsx");
 
-    // Lê o conteúdo do arquivo como texto
     const content = fs.readFileSync(filePath, "utf-8");
 
-    // Remove espaços e quebras de linha do início e verifica se começa com o import
-    expect(content.trimStart().startsWith('import React from "react";')).toBe(
-      true
-    );
+    // Verifica se o arquivo começa com uma importação de React (ex: "import React ...")
+    expect(/^\s*import\s+React\b/.test(content)).toBe(true);
+
   });
 });

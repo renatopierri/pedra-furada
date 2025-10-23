@@ -1,6 +1,5 @@
-// src/pages/RelatoriosPage.jsx
 import React from "react";
-
+// src/pages/RelatoriosPage.jsx
 export default function RelatoriosPage() {
   const estatisticas = {
     total: 10,
